@@ -37,6 +37,7 @@ public class FilmManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void AddInAutoBeloweLimit() {
         FilmManager manager = new FilmManager();
@@ -50,6 +51,7 @@ public class FilmManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void AddInManualLimit() {
         FilmManager manager = new FilmManager(5);
@@ -59,7 +61,7 @@ public class FilmManagerTest {
         manager.addFilm("Taxi 4");
         manager.addFilm("Taxi 5");
 
-        String[] expected = {"Taxi 1", "Taxi 2", "Taxi 3", "Taxi 4", "Taxi 5" };
+        String[] expected = {"Taxi 1", "Taxi 2", "Taxi 3", "Taxi 4", "Taxi 5"};
         String[] actual = manager.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
@@ -76,7 +78,7 @@ public class FilmManagerTest {
         manager.addFilm("Taxi 6");
 
 
-        String[] expected = {"Taxi 1", "Taxi 2", "Taxi 3", "Taxi 4", "Taxi 5" };
+        String[] expected = {"Taxi 1", "Taxi 2", "Taxi 3", "Taxi 4", "Taxi 5"};
         String[] actual = manager.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
@@ -89,7 +91,6 @@ public class FilmManagerTest {
         manager.addFilm("Taxi 2");
         manager.addFilm("Taxi 3");
         manager.addFilm("Taxi 4");
-
 
 
         String[] expected = {"Taxi 1", "Taxi 2", "Taxi 3", "Taxi 4",};
@@ -183,6 +184,7 @@ public class FilmManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void BeloweAutolLimit() {
         FilmManager manager = new FilmManager();
