@@ -22,18 +22,8 @@ public class FilmManager {
     }
 
     public String[] findAll() {
-        int sizeMassive;
-        if (films.length < limit) {
-            sizeMassive = films.length;
-        } else {
-            sizeMassive = limit;
-        }
-        String[] tmp = new String[sizeMassive];
-        for (int i = 0; i < tmp.length; i++) {
-            tmp[i] = films[i];
-        }
 
-        return tmp;
+        return films;
     }
 
     public String[] findLast() {
